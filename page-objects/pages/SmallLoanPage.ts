@@ -84,6 +84,5 @@ export class SmallLoanPage {
   async checkPaymentUndefined(): Promise<void> {
     const paymentErrorText = await this.monthlyAmountSpan.innerText();
     expect(paymentErrorText).toContain("undefined");
-
   }
 }
