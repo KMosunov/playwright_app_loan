@@ -56,7 +56,6 @@ test.describe("Loan App mock Tests", async () => {
     expect(paymentErrorText).toBe("undefined");
   });
 
-
   test("TL-21-4 status 200 incorr key", async ({ page }) => {
     const smallLoanPage = new SmallLoanPage(page);
 
