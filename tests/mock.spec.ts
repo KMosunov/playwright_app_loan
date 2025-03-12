@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test} from "@playwright/test";
 import { SmallLoanPage } from "../page-objects/pages/SmallLoanPage";
 
 test.describe("Loan App mock Tests", async () => {
@@ -52,8 +52,7 @@ test.describe("Loan App mock Tests", async () => {
     const loanCalcResponse = page.waitForResponse("**/api/loan-calc*");
     await smallLoanPage.open();
     await loanCalcResponse;
-    const paymentErrorText = await smallLoanPage.getMonthlyPayment();
-    expect(paymentErrorText).toBe("undefined");
+    await smallLoanPage.checkPaymentUndefined();
   });
 
   test("TL-21-4 status 200 incorr key", async ({ page }) => {
