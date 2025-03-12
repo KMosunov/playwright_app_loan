@@ -1,4 +1,4 @@
-import { test} from "@playwright/test";
+import { test } from "@playwright/test";
 import { SmallLoanPage } from "../page-objects/pages/SmallLoanPage";
 
 test.describe("Loan App mock Tests", async () => {
