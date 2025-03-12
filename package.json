@@ -2,7 +2,10 @@
   "name": "playwright_app_loan",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prettier:format": "prettier --write \"tests/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "prettier:check": "prettier --check \"tests/**/*.{ts,tsx,js,jsx,json,css,md}\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
