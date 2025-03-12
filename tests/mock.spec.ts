@@ -58,7 +58,6 @@ test.describe("Loan App mock Tests", async () => {
 
   test("TL-21-4 status 200 incorr key", async ({ page }) => {
     const smallLoanPage = new SmallLoanPage(page);
-
     await page.route("**/api/loan-calc*", async (request) => {
       const responseBody = { incorrKey: 101 };
       await request.fulfill({
