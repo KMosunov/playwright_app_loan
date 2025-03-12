@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "prettier:format": "prettier --write \"tests/**/*.{ts,tsx,js,jsx,json,css,md}\"",
-    "prettier:check": "prettier --check \"tests/**/*.{ts,tsx,js,jsx,json,css,md}\""
+    "prettier:format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "prettier:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,css,md}\""
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
   "devDependencies": {
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.9"
+  },
+  "dependencies": {
+    "prettier": "^3.5.2"
   }
 }
