@@ -28,7 +28,6 @@ test.describe("Loan App mock Tests", async () => {
       await request.fulfill({
         status: 500,
         contentType: "application/json",
-        body: "",
       });
     });
 
@@ -45,7 +44,6 @@ test.describe("Loan App mock Tests", async () => {
       await request.fulfill({
         status: 200,
         contentType: "application/json",
-        body: "",
       });
     });
 
